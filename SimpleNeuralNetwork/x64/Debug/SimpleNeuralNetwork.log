@@ -1,0 +1,6 @@
+﻿  Neuron.cpp
+  SimpleNeuralNetwork.cpp
+  Utils.cpp
+  Generowanie kodu...
+D:\Visual Studio\repos\SimpleNeuralNetwork\SimpleNeuralNetwork\Utils.cpp(24,1): warning C4715: "Utils::DotProduct”: niewszystkie ścieżki kodu zwracają wartość
+  SimpleNeuralNetwork.vcxproj -> D:\Visual Studio\repos\SimpleNeuralNetwork\x64\Debug\SimpleNeuralNetwork.exe
