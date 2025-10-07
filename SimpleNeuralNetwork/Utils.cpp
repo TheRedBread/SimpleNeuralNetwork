@@ -11,3 +11,16 @@ double Utils::DotProduct(const vector<double>& v1, const vector<double>& v2) {
 double Utils::sigmoid(double x) {
     return 1.0 / (1.0 + exp(-x));
 }
+
+double Utils::MSEloss(vector<double> y_true, vector<double> y_pred) {
+   
+    double result = 0;
+    
+    for (int i = 0; i < y_true.size(); i++) {
+        result += pow(y_true[i] - y_pred[i], 2);
+    }
+    return (result) / y_true.size();
+
+
+}
+
