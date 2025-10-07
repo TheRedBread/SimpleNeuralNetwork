@@ -1,6 +1,6 @@
 ﻿#include <iostream>
 #include <vector>
-#include "Neuron.cpp"
+#include "NeuralNetwork.h"
 
 using namespace std;
 
@@ -8,13 +8,11 @@ using namespace std;
 
 int main()
 {
-	vector<double> weights = {0, 1};
-	double bias = 4;
-	Neuron n = Neuron(weights, bias);
+	NeuralNetwork network = NeuralNetwork();
 
 	vector<double> x = { 2, 3 };
 
-	cout << n.FeedForward(x);
+	cout << network.FeedForward(x);
 
 }
 

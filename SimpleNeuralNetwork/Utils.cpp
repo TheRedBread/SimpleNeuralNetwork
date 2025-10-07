@@ -1,25 +1,13 @@
-#include <math.h>
-#include <vector>
-#include <stdexcept>
-#include <iostream>
+#include "Utils.h"
 
-using namespace std;
+double Utils::DotProduct(const vector<double>& v1, const vector<double>& v2) {
+    double sum = 0.0;
+    for (size_t i = 0; i < v1.size(); ++i) {
+        sum += v1[i] * v2[i];
+    }
+    return sum;
+}
 
-class Utils {
-public:
-
-	static double sigmoid(double x) {
-		return 1 / (1 + exp(-x));
-	}
-	static double DotProduct(vector<double> a, vector<double> b) {
-		if (a.size() != b.size())
-			throw invalid_argument("Vectors must have the same size");
-
-		double result = 0;
-
-		for (int i = 0; i < a.size(); i++) {
-			result += a[i] * b[i];
-		}
-
-	}
-};
+double Utils::sigmoid(double x) {
+    return 1.0 / (1.0 + exp(-x));
+}
