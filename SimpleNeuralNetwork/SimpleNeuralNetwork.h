@@ -25,3 +25,4 @@ public:
     NeuralNetwork();
     double FeedForward(vector<double> x);
 };
+

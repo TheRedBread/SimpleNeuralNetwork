@@ -13,3 +13,5 @@ public:
 
 	double FeedForward(vector<double> inputs);
 };
+
+

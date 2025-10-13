@@ -1,4 +1,5 @@
-﻿  Neuron.cpp
+﻿  NeuralNetwork.cpp
+  Neuron.cpp
   SimpleNeuralNetwork.cpp
   Utils.cpp
   Generowanie kodu...

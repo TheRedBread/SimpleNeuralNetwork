@@ -12,6 +12,11 @@ double Utils::sigmoid(double x) {
     return 1.0 / (1.0 + exp(-x));
 }
 
+double Utils::deriv_sigmoid(double x) {
+    double fx = sigmoid(x);
+    return fx * (1 - fx);
+}
+
 double Utils::MSEloss(vector<double> y_true, vector<double> y_pred) {
    
     double result = 0;
